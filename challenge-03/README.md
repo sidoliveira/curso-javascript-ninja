@@ -159,7 +159,7 @@ pessoa.andando; //false
 Quantos metros a pessoa andou? (Use uma instrução para responder e comentários
 inline ao lado da instrução para mostrar a resposta retornada)
 */
-pessoa.caminhouQuantosMetros;
+pessoa.caminhouQuantosMetros; //45
 
 /*
 Agora vamos deixar a brincadeira um pouco mais divertida! :D
@@ -191,9 +191,11 @@ pessoa.apresentacao = function(){
   if(pessoa.caminhouQuantosMetros === 1){
     metros = 'metro';
   }
-  return 'Olá, eu sou ' + artigo + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ' tenho ' + pessoa.idade + ' ' + anos + ', ' + pessoa.altura + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + metros + '!';
+  return 'Olá, eu sou ' + artigo + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ' tenho ' +
+  pessoa.idade + ' ' + anos + ', ' + pessoa.altura + ', meu peso é ' + pessoa.peso +
+  ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + metros + '!';
 }
 
 // Agora, apresente-se ;)
-pessoa.apresentacao(); //"Olá, eu sou o Sidney Oliveira tenho 24 anos, 1.7, meu peso é 76 e, só hoje, eu já caminhei 45 metros!"
+pessoa.apresentacao(); //"Olá, eu sou o Sidney Oliveira tenho 26 anos, 1.7, meu peso é 76 e, só hoje, eu já caminhei 45 metros!"
 ```
