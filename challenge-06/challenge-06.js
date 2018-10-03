@@ -63,8 +63,7 @@ repetição "while".
 */
 var number = 20;
 while(number <= 30){
-    console.log(number);
-    number++;
+    console.log(number++);
 }
 
 /*
@@ -80,36 +79,39 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     "Não temos o equivalente hexadecimal para [COR]."
 */
 function convertToHex(color){
+    var hexa = '';
     switch (color){
         case 'red':
-            return 'O hexadecimal para a cor red é #FF0000.';
+            hexa = '#FF0000';
             break;
         case 'green':
-            return 'O hexadecimal para a cor red é #008000.';
+            hexa = '#008000';
             break;
         case 'blue':
-            return 'O hexadecimal para a cor red é #0000FF.';
+            hexa = '#0000FF';
             break;
         case 'black':
-            return 'O hexadecimal para a cor red é #000000.';
+            hexa = '#000000';
             break;
         case 'white':
-            return 'O hexadecimal para a cor red é #FFFFFF.';
+            hexa = '#FFFFFF';
             break;
         default:
             return 'Não temos o equivalente hexadecimal para ' + color + '.';
             break;
     }
+
+    return 'O hexadecimal para a cor ' + color + ' é ' + hexa;
 }
 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
 */
-convertToHex('red'); //"O hexadecimal para a cor red é #FF0000."
-convertToHex('green'); //"O hexadecimal para a cor green é #008000."
-convertToHex('blue'); //"O hexadecimal para a cor blue é #0000FF."
-convertToHex('black'); //"O hexadecimal para a cor black é #000000."
-convertToHex('white'); //"O hexadecimal para a cor white é #FFFFFF."
-convertToHex('yellow'); //"Não temos o equivalente hexadecimal para yellow."
-convertToHex('orange'); //"Não temos o equivalente hexadecimal para orange."
-convertToHex('gray'); //"Não temos o equivalente hexadecimal para gray."
+console.log(convertToHex('red')); //"O hexadecimal para a cor red é #FF0000."
+console.log(convertToHex('green')); //"O hexadecimal para a cor green é #008000."
+console.log(convertToHex('blue')); //"O hexadecimal para a cor blue é #0000FF."
+console.log(convertToHex('black')); //"O hexadecimal para a cor black é #000000."
+console.log(convertToHex('white')); //"O hexadecimal para a cor white é #FFFFFF."
+console.log(convertToHex('yellow')); //"Não temos o equivalente hexadecimal para yellow."
+console.log(convertToHex('orange')); //"Não temos o equivalente hexadecimal para orange."
+console.log(convertToHex('gray')); //"Não temos o equivalente hexadecimal para gray."
