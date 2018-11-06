@@ -5,7 +5,7 @@ desses parâmetros.
 */
 var sum = function calculateSum(x, y){
   return x + y;
-}
+};
 
 /*
 Invoque a função criada acima, passando dois números que serão somados, e mostre
@@ -25,20 +25,20 @@ Crie uma função literal chamada `showName`. Essa função deve retornar o
 seu nome.
 */
 function showName(){
-  return arguments.callee.name;
+  return 'Sidney Oliveira';
 }
 
 /*
 Declare uma variável chamada `varShowName` que recebe a função criada acima.
 */
-var varShowName = showName();
+var varShowName = showName;
 
 /*
 Usando a variável criada acima, mostre no console o nome e o retorno da função
 atribuída a ela, com a seguinte frase:
 "A função [NOME DA FUNÇÃO] retorna [RETORNO DA FUNÇÃO]."
 */
-console.log("A função " + varShowName + " retorna " + varShowName + ".")
+console.log("A função " + varShowName.name + " retorna " + varShowName() + ".");
 
 /*
 Crie uma função literal chamada `calculator`, que funcione assim:
@@ -55,10 +55,10 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
 function calculator(operation){
   if (operation !== '+' && operation !== '-' && operation !== '*' && operation !== '/' && operation !== '%'){
     return "Operação inválida.";
-  }
+  };
   return function(x, y){
     return "Resultado da operação: " + x + " " + operation + " " + y + " = " + eval(x + operation + y) + ".";
-  }
+  };
 }
 
 /*
